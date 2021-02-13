@@ -4,3 +4,4 @@ node_modules/
 yarn-error.log
 users.txt
 src.zip
+.DS_Store

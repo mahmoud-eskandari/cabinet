@@ -9,6 +9,9 @@
 npm i
 ```
 
+Twitter config file:`.env`
+
+
 * اجرا
 ```
 export USER_ID=MahmoudEskandri
@@ -17,7 +20,6 @@ npm run build
 نترسید فایل خروجی میره تو پوشه‌ی dst
 
 
-Twitter config file:`.env`
 
 فورک از [Twopcharts](https://github.com/duiker101/twitter-interaction-circle) 
 
