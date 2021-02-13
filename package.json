@@ -1,16 +1,16 @@
 {
-	"name": "twitter-interaction-circle",
-	"description": "Create an Interaction Circle for your Twitter",
+	"name": "twitter-1400-election-cabinet",
+	"description": "Create an Cabinet :)",
 	"version": "1.0.0",
 	"main": "src/index.js",
 	"license": "MIT",
 	"author": {
-		"name": "Simone Masiero",
-		"email": "simone@duiker101.net",
-		"url": "hackertyper.net"
+		"name": "Mahmoud Eskandari",
+		"email": "admin@example.com",
+		"url": "webafrooz.com"
 	},
 	"repository": {
-		"url": "https://github.com/duiker101/twitter-interaction-circles"
+		"url": "https://github.com/mahmoud-eskandari/cabinet/"
 	},
 	"scripts": {
 		"build": "node ./src/index.js",
