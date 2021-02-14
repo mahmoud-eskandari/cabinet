@@ -2,7 +2,6 @@ const dotenv = require("dotenv");
 const getInteractions = require("./data");
 const render = require("./image");
 const {getUser} = require("./api");
-const {renderText} = require("./text");
 const Twitter = require("twitter-lite");
 
 /**
@@ -44,14 +43,14 @@ async function main() {
 	const data = await getInteractions(user.screen_name.toLowerCase(), layers);
 
 
-	//change 1st and 2nd users to side of president :)
-	let i = data[0][4];
-	data[0][4] = data[0][0];
-	data[0][0] = i;
+	//move 1st and 2nd users to side of president :)
+	let i = data[1][4];
+	data[1][4] = data[1][0];
+	data[1][0] = i;
 
-	i = data[0][5];
-	data[0][5] = data[0][1];
-	data[0][1] = i;
+	i = data[1][5];
+	data[1][5] = data[1][1];
+	data[1][1] = i;
 
 	const exp = data[0].concat(data[1]).concat(data[2]);
 	// render the image
@@ -59,10 +58,6 @@ async function main() {
 		{users: [user]},
 		{users: exp},
 	]);
-
-	// Look at the arguments passed to the cli. If one of them is --text then we want to render a text version of the image too
-	const shouldRenderText = process.argv.find((arg) => arg === "--text");
-	if (shouldRenderText) await renderText(data);
 }
 
 // entry point

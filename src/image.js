@@ -68,13 +68,13 @@ module.exports = async function render(config) {
             if (layerIndex === 0) {
                 ctx.drawImage(
                     img,
-                    655,
+                    660,
                     40,
                     150,
                     150
                 );
 				ctx.font = "18px Arial";
-				ctx.strokeText(users[i].screen_name, 660, 230);
+				ctx.strokeText(users[i].screen_name, 660+((33-(users[i].screen_name.length*3))), 230);
 				ctx.font = "28px Arial";
 				ctx.fillText(users[i].screen_name, 105, 47);
             }else{
